@@ -1,0 +1,11 @@
+build:
+  cuda_version: "12.1.1"
+  system_packages:
+    - "libssl-dev"
+    - "libsparsehash-dev"
+    - "libgl1-mesa-glx"
+    - "libx11-6"
+  run:
+    - "pip install torch==2.4.1+cu124 torchvision==0.19.1+cu124 torchaudio==2.4.1+cu124 --index-url https://download.pytorch.org/whl/cu124"
+    - "pip install transformers==4.50.2 tokenizers==0.21.1 safetensors==0.4.5 pandas==2.2.3 einops==0.8.1 scipy==1.15.2 scikit-learn==1.6.1 toml==0.10.2 rerun-sdk==0.21.0 shapely==2.0.7 bbox==0.9.4 terminaltables==3.1.10 open3d==0.18.0 nvidia-cudnn-cu12 nvidia-nccl-cu12 addict==2.4.0 --ignore-installed"
+    - 'git clone https://github.com/mit-han-lab/torchsparse.git && cd torchsparse && TORCH_CUDA_ARCH_LIST="8.0" FORCE_CUDA=1 python3 setup.py install && cd ..'

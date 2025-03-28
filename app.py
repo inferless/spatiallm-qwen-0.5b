@@ -17,7 +17,7 @@ import inferless
 
 @inferless.request
 class RequestObjects(BaseModel):
-    url: str = Field(default="Give me 5 non-formal ways to say 'See you later' in French.")
+    url: str = Field(default="https://github.com/rbgo404/Files/raw/main/scene0000_00.ply")
 
 @inferless.response
 class ResponseObjects(BaseModel):

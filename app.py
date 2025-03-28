@@ -73,7 +73,8 @@ class InferlessPythonModel:
         )
         layout.translate(min_extent)
         pred_language_string = layout.to_language_string()
-
+        
+        os.remove(file_name)
         return ResponseObjects(layout_content=pred_language_string)
         
   def finalize(self):

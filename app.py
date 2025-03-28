@@ -25,8 +25,8 @@ class ResponseObjects(BaseModel):
 
 class InferlessPythonModel:
   def initialize(self):
-        self.tokenizer = AutoTokenizer.from_pretrained('manycore-research/SpatialLM-Llama-1B')
-        self.model = AutoModelForCausalLM.from_pretrained('manycore-research/SpatialLM-Llama-1B').to("cuda")
+        self.tokenizer = AutoTokenizer.from_pretrained('manycore-research/SpatialLM-Qwen-0.5B')
+        self.model = AutoModelForCausalLM.from_pretrained('manycore-research/SpatialLM-Qwen-0.5B').to("cuda")
         self.model.set_point_backbone_dtype(torch.float32)
         self.model.eval()
 

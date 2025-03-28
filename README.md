@@ -32,7 +32,12 @@ Log in to your inferless account, select the workspace you want the model to be 
 
 Enter all the required details to Import your model. Refer [this link](https://docs.inferless.com/integrations/git-custom-code/git--custom-code) for more information on model import.
 
----
+### Add Your Hugging Face Access Token
+This model requires a Hugging Face access token for authentication. You can provide the token in the following ways:
+
+- **Via the Platform UI**: Set the `HF_TOKEN` in the **Environment Variables** section.
+- **Via the CLI**: Add the `HF_TOKEN` as an environment variable.
+
 ## Curl Command
 Following is an example of the curl command you can use to make inference. You can find the exact curl command in the Model's API page in Inferless.
 

@@ -1,5 +1,8 @@
 build:
   cuda_version: "12.1.1"
+  python_packages:
+    - "inferless==0.2.14"
+    - "pydantic==2.10.6"
   system_packages:
     - "libssl-dev"
     - "libsparsehash-dev"

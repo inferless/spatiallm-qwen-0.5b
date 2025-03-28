@@ -1,6 +1,6 @@
-# Tutorial - Deploy SpatialLM-Llama-1B using Inferless
+# Tutorial - Deploy SpatialLM-Qwen-0.5B using Inferless
 
-SpatialLM-Llama-1B is a 3D large language model that processes point cloud data to produce structured 3D scene representations. It identifies architectural elements and object bounding boxes with semantic labels from various sources, including video, RGBD images, and LiDAR. 
+SpatialLM-Qwen-0.5B is a 3D large language model that processes point cloud data to produce structured 3D scene representations. It identifies architectural elements and object bounding boxes with semantic labels from various sources, including video, RGBD images, and LiDAR. 
 
 ## TL;DR:
 - Deployment of  model using [transformers](https://github.com/huggingface/transformers/).
